@@ -1,0 +1,24 @@
+.sidopt {
+    display: flex;
+    -webkit-box-align: start;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.sidopt >.MuiSvgIcon-root {
+    padding: 20px;
+}
+.sidopt >h2 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.sidopt:hover {
+    background-color: #e8f5fe;
+    border-radius: 30px;
+    color: var(--twitter-color);
+   transition: color 300ms ease-in;
+}
+.sidopt--active {
+    color: var(--twitter-color);
+}
