@@ -5,8 +5,17 @@
     font-size: 30px !important;
     margin-bottom: 20px;
     margin-left: 20px;
+    cursor: pointer;
+    font-weight: lighter !important;
     
     
+}
+.twittericon:hover{
+        background-color: var(--twitter-background);
+        border-radius: 10px;
+        text-transform: inherit !important; 
+        transition: color 300ms ease-in;
+        font-weight: bold !important;
 }
 .sidebar__tweet {
     background-color: var(--twitter-color) !important;

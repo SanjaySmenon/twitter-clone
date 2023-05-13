@@ -1,0 +1,79 @@
+.post{
+   display: flex;
+   align-items: flex-start;
+   text-align: left;
+   border-bottom: 1px solid var(--twitter-background);
+   padding-bottom: 10px;
+}
+.post__body{
+    flex: 1;
+    padding: 10px;
+}
+.post__body>img{
+    border-radius: 20px;
+    width: 100%;
+    
+} 
+.post__badge{
+    font-size: 14px !important;
+    color: var(--twitter-color);
+     
+}
+.post__footer{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.post__headerSpecial{
+    font-weight: 600 ;
+    font-size: 12px;
+    color: gray;
+}
+/*.post__footer:hover{
+    background-color: #e8f5fe;
+    border-radius: 30px;
+    color: var(--twitter-color);
+   transition: color 300ms ease-in;
+   font-weight: bold
+}*/
+
+/*.post__headerText > h3{
+    text-align: left;
+}
+.post__headerDescription{
+    text-align: left;
+}*/
+.b1:hover{
+    background-color: #e8f5fe;
+    border-radius: 30px;
+    color: var(--twitter-color);
+   transition: color 300ms ease-in;
+   font-weight: bold;
+   cursor: pointer;
+}
+.b2:hover{
+    background-color: #e8f5fe;
+    border-radius: 30px;
+    color: var(--twitter-color);
+   transition: color 300ms ease-in;
+   font-weight: bold;
+   cursor: pointer;
+   
+}
+.b3:hover{
+    background-color: #e8f5fe;
+    border-radius: 30px;
+    color: var(--twitter-color);
+   transition: color 300ms ease-in;
+   font-weight: bold;
+   cursor: pointer;
+}
+.b4:hover{
+    background-color: #e8f5fe;
+    border-radius: 30px;
+    color: var(--twitter-color);
+   transition: color 300ms ease-in;
+   font-weight: bold;
+   cursor: pointer;
+}
