@@ -1,12 +1,17 @@
 import React from 'react';
 import "./Sidebaroptions.css"
-function Sidebaroptions({active,text,Icon}) {
+import { Button } from "@mui/material";
+function Sidebaroptions({ active, text, Icon, link }) {
   return (
     <div className={`sidopt ${active && "sidopt--active"}`}>
-        <Icon/>
-        <h2>{text}</h2>
+      <Button className="sidbtn" href={link}>
+        <div className="side">
+          <Icon />
+          <h2>{text}</h2>
+        </div>
+      </Button>
     </div>
-  )
+  );
 }
 
 export default Sidebaroptions

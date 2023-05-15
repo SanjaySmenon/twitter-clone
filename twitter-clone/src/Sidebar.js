@@ -13,19 +13,24 @@ import  {Button}  from "@mui/material";
 import Avatar from '@mui/material/Avatar';
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import Sidebaroptions from './Sidebaroptions';
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
-    <div className='sidebar'>
-       <TwitterIcon className='twittericon'/>
-       <Sidebaroptions active Icon={HomeIcon} text="Home"/>
-       <Sidebaroptions Icon={SearchIcon} text="Explore"/>
-       <Sidebaroptions Icon={NotificationsIcon} text="Notification"/>
-       <Sidebaroptions Icon={MessageIcon} text="Messages"/>
-       <Sidebaroptions Icon={BookmarkIcon} text="Bookmarks"/>
-       <Sidebaroptions Icon={ArticleIcon} text="Lists"/>
-       <Sidebaroptions Icon={AccountCircleIcon} text="Profile"/>
-       <Button variant="outlined" className="sidebar__tweet" fullWidth>Tweet</Button>    
+    <div className="sidebar">
+      <TwitterIcon className="twittericon" />
+      <Sidebaroptions active Icon={HomeIcon} text="Home" />
+      <Sidebaroptions Icon={SearchIcon} text="Explore" />
+      <Sidebaroptions Icon={NotificationsIcon} text="Notification" />
+      <Sidebaroptions Icon={MessageIcon} text="Messages" />
+      <Sidebaroptions Icon={BookmarkIcon} text="Bookmarks" />
+      <Sidebaroptions Icon={ArticleIcon} text="Lists" />
+      <Sidebaroptions Icon={AccountCircleIcon} text="Profile" />
+      <Button variant="outlined" className="sidebar__tweet" fullWidth>
+        Tweet
+      </Button>
     </div>
-  )
+  );
 }
+
+
