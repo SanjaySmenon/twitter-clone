@@ -13,7 +13,7 @@ function Login() {
       <h1>Login</h1>
       <div className="username">
         <PersonIcon />
-        <h1>gog</h1>
+
         <TextField id="outlined-basic" label="username" variant="outlined" />
         <div className="pass">
           <PasswordIcon />
