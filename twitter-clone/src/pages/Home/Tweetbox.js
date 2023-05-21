@@ -4,7 +4,11 @@ import { Avatar, Button } from "@mui/material";
 import db from "./firebase";
 import "firebase/compat/firestore";
 import firebase from "firebase/compat/app";
-
+// var user = firebase.auth().currentUser;
+// var email;
+// if (user) {
+//   email = user.email;
+// }
 function Tweetbox() {
   const [tweetMessage, setTweetMessage] = useState("");
   const [tweetImage, setTweetImage] = useState("");
@@ -14,7 +18,7 @@ function Tweetbox() {
     db.collection("posts").add({
       displayName: "sanjay",
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-      userName: "sanjaysmenon",
+      userName: firebase.auth().currentUser.email,
       verified: true,
       text: tweetMessage,
       image: tweetImage,
@@ -44,9 +48,9 @@ function Tweetbox() {
           placeholder="Enter image URL"
           type="text"
         />
-        <Button onClick={sendTweet} type="submit" className="tweetboxbutton">
+        <button onClick={sendTweet} type="submit">
           Tweet
-        </Button>
+        </button>
       </form>
     </div>
   );

@@ -1,27 +1,141 @@
-.login{
+
+
+
+.container {
     display: flex;
+    justify-content: center ;
+    align-items: center;
     flex-direction: column;
     height: 100vh;
     max-width: auto;
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--twitter-background);
+    background-color: var(--twitter--background);
+    
     align-items: center;
-}
-.username{
-   
-    color: black;
-
-    height: 100vh;
-    max-width: 1000px;
-    padding-top: 100px;
-   margin-bottom: auto;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: auto;
-   align-items: center;
-}
-.pass{
+  }
+  
+  .form {
     display: flex;
-    padding-top: 10px;
-}
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+  }
+  
+  .form .form_front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    backface-visibility: hidden;
+    padding: 65px 45px;
+    border-radius: 15px;
+    box-shadow: inset 2px 2px 10px rgba(0,0,0,1),
+    inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+  }
+  
+  .form .form_back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+    padding: 65px 45px;
+    border-radius: 15px;
+    box-shadow: inset 2px 2px 10px rgba(0,0,0,1),
+    inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+  }
+  
+  .form_details {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+  .icon{
+    align-items: center ;
+
+  }
+  
+  .input {
+    width: 245px;
+    min-height: 45px;
+    color: #000000;
+    outline: none;
+    transition: 0.35s;
+    padding: 0px 7px;
+    background-color: #212121;
+    border-radius: 6px;
+    border: 2px solid #212121;
+    box-shadow: 6px 6px 10px rgba(0,0,0,1),
+    1px 1px 10px rgba(255, 255, 255, 0.6);
+  }
+  
+  .input::placeholder {
+    color: #999;
+  }
+  
+  .input:focus.input::placeholder {
+    transition: 0.3s;
+    opacity: 0;
+  }
+  
+  .input:focus {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 10px rgba(0,0,0,1),
+    1px 1px 10px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 10px rgba(0,0,0,1),
+    inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+  }
+  
+  .btn {
+    padding: 10px 35px;
+    cursor: pointer;
+    background-color: #212121;
+    border-radius: 6px;
+    border: 2px solid #212121;
+    box-shadow: 6px 6px 10px rgba(0,0,0,1),
+    1px 1px 10px rgba(255, 255, 255, 0.6);
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.35s;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 10px rgba(0,0,0,1),
+    1px 1px 10px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 10px rgba(0,0,0,1),
+    inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+  }
+  
+  .btn:focus {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 10px rgba(0,0,0,1),
+    1px 1px 10px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 10px rgba(0,0,0,1),
+    inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+  }
+  
+  .form .switch {
+    font-size: 13px;
+  }
+  
+  .form .switch .signup_tog {
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .container #signup_toggle {
+    display: none;
+  }
+  
+  .container #signup_toggle:checked + .form {
+    transform: rotateY(-180deg);
+  }

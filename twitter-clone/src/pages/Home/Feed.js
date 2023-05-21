@@ -5,6 +5,7 @@ import "./Feed.css";
 import Post from "./Post";
 import db from "./firebase";
 import FlipMove from "react-flip-move";
+import firebase from "firebase/compat/app";
 export default function Feed() {
   const [posts, setPosts] = useState([]);
 
